@@ -1,0 +1,53 @@
+<section class="mt-5">
+  <div class="container">
+   <div class="row">
+     <section style="color: #2c3e50"class="col-12 ">
+      <div class="text-center py-3 mt-5">
+       <h1 class="fw-bold mt-3" >CONATCT SECTION</h1>
+       <section  class="d-flex justify-content-center align-items-center my-3">
+         <div class="div-line me-3 bg-black"></div>
+         <i class="fa-solid fa-star"></i>
+         <div class="div-line text-black ms-3 bg-black"></div>
+         </section>
+      </div>
+     </section>
+   </div>
+  </div>
+ <div class="container">
+   <div class="row">
+     <div class="col-12">
+       <div class="item" style="padding: 50px 80px;">
+         <!-- top: 40px;
+   transition: 0.4s; -->
+         <label class="position-relative"
+         [style]="inputText ? 'top:0;' :'top:36px; transition:top 1s;'" for=""
+         >User Name :</label>
+       <input id="text" class="form-control border-0 border-bottom my-3 position-relative"
+       type="text" [(ngModel)]="inputText" placeholder="User Name">
+       <!-- ***************************************************************************************************** -->
+         <label class="position-relative"
+         [style]="inputEmail ? 'top:0;' :'top:36px; transition:top 1s;'" for=""
+         >User Email :</label>
+       <input id="text" class="form-control border-0 border-bottom my-3 position-relative"
+       type="email" [(ngModel)]="inputEmail" placeholder="User Email">
+       <!-- ***************************************************************************************************** -->
+         <label class="position-relative"
+         [style]="inputNumber ? 'top:0;' :'top:36px; transition:top 1s;'" for=""
+         >User Number :</label>
+       <input id="text" class="form-control border-0 border-bottom my-3 position-relative"
+       type="number" [(ngModel)]="inputNumber" placeholder="User Number">
+       <!-- ***************************************************************************************************** -->
+         <label class="position-relative"
+         [style]="InputPassword ? 'top:0' :'top:36px; transition:top 1s;'" for=""
+         >User Password :</label>
+       <input id="text" class="form-control border-0 border-bottom my-3 position-relative"
+       type="password" [(ngModel)]="InputPassword" placeholder="User Password">
+       <!-- ***************************************************************************************************** -->
+       <button  (click)="clear()" class="btn btn-contact text-white fs-6" type="submit">sende Message</button>
+       </div>
+     </div>
+   </div>
+ </div>
+ </section>
+
+

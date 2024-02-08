@@ -1,0 +1,27 @@
+<div class="container mt-5">
+  <div class="row">
+    <section style="color: #2c3e50"class="col-12 text-center mt-4 py-3">
+      <h1 class="fw-bold" >Portofolio SECTION</h1>
+      <section  class="d-flex justify-content-center align-items-center my-3">
+        <div class="div-line me-3 bg-black"></div>
+        <i class="fa-solid fa-star"></i>
+        <div class="div-line text-black ms-3 bg-black"></div>
+        </section>
+    </section>
+  </div>
+ </div>
+ <div class="container">
+  <div class="row g-3 my-3">
+    <div class="col-md-4" *ngFor="let image of images">
+      <div (click)="getSrc(image.imgPath)" class="item position-relative overflow-hidden">
+        <img   [src]="image.imgPath" class="w-100" alt="">
+        <div   style="background-color: #1abc9c;" class="layer position-absolute top-0 start-0 bottom-0 end-0 d-flex justify-content-center align-items-center">
+          <i class="fa-solid fa-plus fs-1 text-white"></i>        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+
+ <div (click)="hideDiv($event)" *ngIf="UserClick" id="layerImg" class=" bg-primary bg-opacity-50 position-fixed top-0 w-100 h-100 start-0  d-flex justify-content-center align-items-center">
+  <img [src]="UserImg"  class="w-50" alt="">
+ </div>

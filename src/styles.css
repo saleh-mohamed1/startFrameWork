@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+.div-line{
+  width: 100px !important;
+  height: 4px !important;
+}
+
+@media only screen and (max-width: 992px) {
+  .div-line{
+    width: 70px !important;
+    height: 4px !important;
+  }
+}

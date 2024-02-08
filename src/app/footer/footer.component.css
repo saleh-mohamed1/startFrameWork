@@ -1,0 +1,24 @@
+.section{
+  background-color: #344a5e;
+
+}
+.lastSec{
+  background-color: #2c3e50;
+}
+#icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.divIcons{
+  margin: 0 5px;
+  font-size: 18px;
+  display: flex ;
+  justify-content: center ;
+  align-items: center ;
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+

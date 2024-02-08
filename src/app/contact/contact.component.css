@@ -1,0 +1,14 @@
+.btn-contact{
+  background-color:#1abc9c;
+
+}
+label{
+  transition: top 1s;
+  color:#1abc9c
+}
+
+input:focus{
+  box-shadow: none !important;
+}
+
+
